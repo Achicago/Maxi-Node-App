@@ -1,0 +1,64 @@
+Config Library Included
+Run NODE_ENV={staging / production } to use either staging or production module
+  find in the config.js
+
+  Support HTTPS
+
+  mkdir https && cd https
+
+  Use in your Command-Line, To Generate Node HTTPS
+  openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+
+
+  Node API With HTTPS Enabled with NO NPM Packages
+  - With Data(CRUD) Library
+  - Hashing password, Using crypto Library
+  - Creating and storing  new User to the disk in a '.json' file with the data.js Library
+
+  How to Use
+
+USE Postman or Any API Client of your choice
+
+  POST => localhost:3000/users
+            {Body => raw}
+            {
+              "firstName" : "Ani",
+              "lastName" : "Ama",
+              "phone" : "5555555555",
+              "password" : "password",
+              "tosAgreement" : true 
+            }
+
+  GET => localhost:3000/users?phone=5555555555
+
+  PUT => localhost:3000/users
+            {Body => raw}
+            {
+              "firstName" : "Amaka",
+              "phone" : "5555555555"
+            }
+
+  DELETE => localhost:3000/users?phone=5555555555
+  
+//////////////////////////////////////////Token
+
+
+USE Postman or Any API Client of your choice
+
+  POST => localhost:3000/users
+            {Body => raw}
+            {
+              "lastName" : "Ama",
+              "phone" : "5555555555"
+            }
+     To get Token and All
+        {
+          "phone": "5555555555",
+          "id": "3knwosb99arbe92zh1x8",
+          "expires": 1633714723562
+        }
+
+
+
+
+
